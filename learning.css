@@ -1,0 +1,26 @@
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	transition-property: color, background-color, border-color, box-shadow;
+	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+	transition-delay: 0s, 0s, 0s, 0s;
+	overflow: visible;
+	margin: 0px;
+	font: bold;
+	font-size: 20px;
+	font-family: inherit;
+	box-sizing: border-box;
+	text-rendering: auto;
+	position: fixed;
+}
+
+.btn-outline-success {
+	color: #28a745;
+	background-color: transparent;
+	background-image: none;
+	border-color:: #28a745;
+}

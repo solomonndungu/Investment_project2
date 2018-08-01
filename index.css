@@ -1,0 +1,137 @@
+body {
+	background-image: url("whitestock5.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 250%
+}
+.btn {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	transition-property: color, background-color, border-color, box-shadow;
+	transition-duration: 0.15s, 0.15s, 0.15s, 0.15s;
+	transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+	transition-delay: 0s, 0s, 0s, 0s;
+	overflow: visible;
+	margin: 20px;
+	font: bold;
+	font-size: 20px;
+	font-family: inherit;
+	box-sizing: border-box;
+	text-rendering: auto;
+	position: fixed;
+}
+
+.btn-outline-success {
+	color: #28a745;
+	background-color: transparent;
+	background-image: none;
+	border-color:: #28a745;
+}
+
+.navbar {
+	background: transparent;
+	transition: 0.8s;
+}
+
+.navbar::after {
+	background: transparent;
+}
+
+.fa{
+	font-size: 30px;
+	position: auto;
+	color: white;
+	background-color:none;
+}
+
+
+#sidebar {
+	height: 100%;
+	position: fixed;
+	top: 75px;
+	left:0;
+	background: transparent;
+	overflow-x: hidden;
+	transition: 0.8s;
+	padding: 5px;
+	border-style: inset;
+	border-width: 1px;
+	border-color: green;
+
+}
+
+#closebar {
+
+}
+
+#closebar :hover {
+	cursor: pointer;
+	background-color: transparent;
+}
+
+#MainPage {
+	margin-top: 80px;
+}
+
+.mySlides {
+	width: 100%;
+}
+
+h1 {
+	font: bolder;
+	text-align:center;
+	color: black;
+}
+
+h3 {
+	font: bold;
+	text-align: justify;
+	margin-left: 250px;
+	margin-right: 75px;
+	letter-spacing: 5px;
+	color: black;
+}
+
+h5 {
+	font: bold;
+	text-align: justify;
+	margin-left: 250px;
+	margin-right: 75px;
+	letter-spacing: 5px;
+	color: black;
+}
+
+.content {
+	transition: 0.8s;
+}
+
+h2 {
+	text-align:center;
+	color: black;
+}
+
+#simple {
+	width: 95%;
+	height: 25%;
+	margin-left: 30px;
+	margin-right: 200px;
+
+}
+
+#educate {
+	width: 95%;
+	height: 25%;
+	margin-left: 30px;
+	margin-right: 200px;
+
+}
+
+#wealth {
+	width: 95%;
+	height: 25%;
+	margin-left: 30px;
+	margin-right: 200px;
+
+}
