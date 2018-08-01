@@ -2,10 +2,15 @@
 <html>
 	<head>
 		<link rel = "icon" type = "image/png" href = "educate2.jpg">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<script src = "learning.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel = "stylesheet" = href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "learning.css">
+		
 		<title>Learning</title>
-		<link rel = "stylesheet" href = "register.css">
+		
 	</head>
 	<body>
 		<nav class = "navbar navbar-light bg-transparent">
@@ -13,19 +18,70 @@
 				<a href = "index.html"><button class = "btn btn-outline-success" type = "button" id = "Exponential">EXPONENTIAL FUTURE</button></a>
 			</div>
 		</nav>
-		<ul class = "nav nav-pills mb-3" id = "pills-tab" role = "tablist">
-			<li class = "nav-item">
-				<a class = "nav-link active" id = "pills-portfolio-tab" data-toggle = "pill" href = "#pills-portfolio" role = "tab" aria-controls = "pills-portfolio" aria-selected = "true">Portfolio</a>
-			</li>
-			<li class = "nav-item">
-				<a class = "nav-link" id = "pills-stocks-tab" data-toggle = "pill" href = "#pills-stocks" role = "tab" aria-controls = "pills-stocks" aria-selected = "false">Stocks</a>
-			</li>
-			<li class = "nav-item">
-				<a class = "nav-link" id = "pills-shares-tab" data-toggle = "pill" href = "#pills-shares" role = "tab" aria-controls = "pills-shares" aria-selected = "false">Shares</a>
-			</li>
-		</ul>
-		<div class = "tab-content" id = "pills-tabContent">
-			<div class = "tab-pane fade show active" id = "pills-portfolio" role = "tabspanel" aria-labelledby = "pills-portfolio-tab">
+		<br />
+		<br />
+		<div>
+			<ul class = "nav nav-pills mb-3" id = "pills-tab" role = "tablist">
+				<li class = "nav-item">
+					<a class = "nav-link active" id = "pills-portfolio-tab" data-toggle = "pill" href = "#pills-portfolio" role = "tab" aria-controls = "pills-portfolio" aria-selected = "true">Portfolio</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" id = "pills-stocks-tab" data-toggle = "pill" href = "#pills-stocks" role = "tab" aria-controls = "pills-stocks" aria-selected = "false">Stocks</a>
+				</li>
+				<li class = "nav-item">
+					<a class = "nav-link" id = "pills-shares-tab" data-toggle = "pill" href = "#pills-shares" role = "tab" aria-controls = "pills-shares" aria-selected = "false">Shares</a>
+				</li>
+			</ul>
+			<div class = "tab-content" id = "pills-tabContent">
+				<div class = "tab-pane fade show active" id = "pills-portfolio" role = "tabspanel" aria-labelledby = "pills-portfolio-tab">
+					<br />
+					<br />
+					<p><h1>Portfolio</h1></p>
+					<p><h3>What is a 'Portfolio'</h3></p>
+					<p>A portfolio is a grouping of financial assets such as stocks, bonds, commodities, currencies and cash equivalents, as well as their fund counterparts, including mutual, exchange-traded and closed funds. A portfolio can also consist of non publicly tradable securities, like real estate, art, and private investments. Portfolios are held directly by investors and/or managed by financial professionals and money managers. Investors should construct an investment portfolio in accordance with their <a href = "https://www.investopedia.com/terms/r/risktolerance.asp">risk tolerance</a> and their investing objectives. Investors can also have multiple portfolios for various purposes. It all depends on one's objectives as an investor. </p>
+					<p>An investment portfolio can be thought of as a pie that is divided into pieces of varying sizes, representing a variety of asset classes and/or types of investments to accomplish an appropriate risk-return portfolio allocation. Many different types of securities can be used to build a diversified portfolio, but stocks, bonds and cash are generally considered a portfolio's core building blocks. Other potential asset classes include, but aren't limited to, real estate, gold and currency.</p>
+					<br />
+					<p><a href = "https://www.investopedia.com/terms/p/portfolio.asp">Further reading</a></p>
+				</div>
+				<div class = "tab-pane fade" id = "pills-stocks" role = "tabpanel" aria-labelledby = "pills-stocks-tab">
+					<br />
+					<br />
+					<p><h1>Stock</h1></p>
+					<p><h3>What is a 'Stock'</h3></p>
+					<p>A stock (also known as "shares" and "equity) is a type of security that signifies ownership in a <a href = "https://www.investopedia.com/terms/c/corporation.asp">corporation</a> and represents a claim on part of the corporation's assets and earnings.
+
+There are two main types of stock: common and preferred. <a href = "https://www.investopedia.com/terms/c/commonstock.asp">Common stock</a> usually entitles the owner to vote at shareholders' meetings and to receive dividends. <a href = "https://www.investopedia.com/terms/p/preferredstock.asp">Preferred stockholders</a> generally do not have <a href = "https://www.investopedia.com/terms/v/votingright.asp">voting rights</a>, though they have a higher claim on assets and <a href = "https://www.investopedia.com/terms/e/earnings.asp">earnings</a> than the common stockholders. For example, owners of preferred stock receive <a href = "https://www.investopedia.com/terms/d/dividend.asp">dividends</a> before <a href = "https://www.investopedia.com/terms/c/common_shareholder.asp">common shareholders</a> and have priority in the event that a company goes bankrupt and is liquidated.
+</p>
+<br />
+<p>A holder of stock (a shareholder) has a claim to a part of the corporation's assets and earnings. In other words, a shareholder is an owner of a company. Ownership is determined by the number of shares a person owns relative to the number of <a href = "https://www.investopedia.com/terms/o/outstandingshares.asp">outstanding shares.</a> For example, if a company has 1,000 shares of stock outstanding and one person owns 100 shares, that person would own and have claim to 10% of the company's assets.
+
+Stocks are the foundation of nearly every portfolio. Historically, they have outperformed most other investments over the <a href = "https://www.investopedia.com/terms/l/longrun.asp">long run.</a></p>
+<br />
+<p><a href = "https://www.investopedia.com/terms/s/stock.asp">Further reading</a></p>
+				</div>
+				<div class = "tab-pane fade" id = "pills-shares" role = "tabpanel"
+				aria-labelledby = "pills-shares-tab">
+					<br />
+					<br />
+					<p><h1>Shares</h1></p>
+					<p><h3>What are 'Shares'</h3></p>
+					<p>Shares are units of ownership interest in a <a href = "https://www.investopedia.com/terms/c/corporation.asp">corporation</a> or <a href = "https://www.investopedia.com/terms/f/financialasset.asp">financial asset</a> that provide for an equal distribution in any profits, if any are declared, in the form of <a href = "https://www.investopedia.com/terms/d/dividend.asp">dividends.</a> The two main types of shares are common shares and <a href = "https://www.investopedia.com/video/play/preferred-stock-vs-common-stock/">preferred shares.</a> Physical paper <a href = "https://www.investopedia.com/terms/s/stockcertificate.asp">stock certificates</a> have been replaced with electronic recording of stock shares, just as <a href = "https://www.investopedia.com/terms/m/mutualfund.asp">mutual fund</a> shares are recorded electronically.</p>
+					<br />
+					<p>When establishing a corporation, owners may choose to issue common stock or preferred stock.
+
+Most companies issue common stock. The stock may benefit shareholders through appreciation and dividends, making common stock riskier than preferred stock. <a href = "https://www.investopedia.com/terms/c/commonstock.asp">Common stock</a> also comes with voting rights, giving shareholders more control over the business. In addition, certain common stock comes with pre-emptive rights, ensuring that shareholders may buy new shares and retain their percentage of ownership when the corporation issues new stock.
+
+In contrast, preferred stock typically does not offer appreciation in value or voting rights in the corporation. However, the stock typically has set payment criteria; a dividend that is paid out regularly, making the stock less risky than common stock. Also, preferred stock may often be redeemed at a more beneficial price than common stock. Because preferred stock takes priority over common stock, if the business files for bankruptcy and pays its lenders, preferred shareholders receive payment before common shareholders.</p>
+<br />
+<p><h3>Authorized and Issued Shares
+</h3></p>
+<p>Authorized shares comprise the number of shares a company’s board of directors may issue. Issued shares comprise the number of shares that are given to shareholders and counted for purposes of ownership.
+
+Because shareholders’ ownership is affected by the number of authorized shares, shareholders may limit that number as they see appropriate. When shareholders want to increase the number of authorized shares, they conduct a meeting to discuss the issue and establish an agreement. When shareholders agree to increase the number of authorized shares, a formal request is made to the state through filing articles of amendment.</p>
+<br />
+<p><a href = "https://www.investopedia.com/terms/s/shares.asp">Further reading</a></p>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
