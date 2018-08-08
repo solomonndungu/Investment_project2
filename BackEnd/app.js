@@ -9,7 +9,7 @@ var LocalStrategy = require("passport-local");//lets you authenticate using a us
 var cookieParser = require("cookie-parser");
 var flash = require("connect-flash");//stores messages to display to user on next page or when redirecting
 
-var ClientDetails = require("./models/user");
+var ClientDetails = require("./models/register");
 
 
 app.engine('html', cons.swig)
@@ -17,7 +17,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));//allows to choose between parsing the URL-encoded data for rich objects and arrays to be encoded for JSON
 
 app.get("/", function(req, res) {
     res.render("index");
@@ -40,10 +40,10 @@ MongoClient.connect("mongodb://localhost:27017/back_end", { useNewUrlParser: tru
     .then(() => console.log(`Client Database connected`))
     .catch(err => console.log(`Oops! Check your MongoDB connection: ${err.message}`));
 
-
-app.post("/register", function(req, res) {
+//gets urlencoded bodies
+app.post("/register", urlencodedParser, function(req, res) {
     var newClient = new ClientDetails({
-        name: req.body.name,
+        username: req.body.name,
         id: req.body.id,
         email: req.body.email,
         password: req.body.password,
