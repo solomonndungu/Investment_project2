@@ -1,13 +1,13 @@
-var express = require("express");
-var path = require("path");
-var MongoClient = require("mongoose");
-var bodyParser = require("body-parser");
-var cons = require('consolidate');
+var express = require("express");//helps in routing or navigating pages
+var path = require("path");//allows one to navigate to local files and read them
+var MongoClient = require("mongoose");//object modeling tool designed to work in asynchronous environment
+var bodyParser = require("body-parser");//parse incoming requests or look into components of request 
+var cons = require('consolidate');//template engine consolidation library...allows html to be displayed after loading of server
 var app = express();
-var passport = require("passport");//unobtrusive authentication for Node.js
-var LocalStrategy = require("passport-local");
+var passport = require("passport");//unobtrusive authentication for Node.js...allows user to first authenticate their details
+var LocalStrategy = require("passport-local");//lets you authenticate using a username and password using Passport
 var cookieParser = require("cookie-parser");
-var flash = require("connect-flash");
+var flash = require("connect-flash");//stores messages to display to user on next page or when redirecting
 
 var ClientDetails = require("./models/user");
 
@@ -62,7 +62,7 @@ app.post("/register", function(req, res) {
     });
 });
 
-app.get("login", function(req, res) {
+app.get("/login", function(req, res) {
     res.render("login", {page: 'login'});
 });
 
