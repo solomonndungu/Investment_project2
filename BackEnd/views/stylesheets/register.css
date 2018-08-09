@@ -25,7 +25,7 @@ input[type=text]:focus,input[type=password]:focus {
 .container {
 	padding: 16px;
 	background-color: grey;
-	background-image: url("../images/whitestocks8.jpg");
+	background-image: url("../../images/whitestocks8.jpg");
 }
 
 .registerbtn {
@@ -74,5 +74,5 @@ a {
 	color: #28a745;
 	background-color: transparent;
 	background-image: none;
-	border-color:: #28a745;
+	border-color: #28a745;
 }

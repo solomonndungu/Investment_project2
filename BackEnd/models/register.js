@@ -2,7 +2,7 @@ var MongoClient = require("mongoose");
 var passportLocalMongoose = require("passport-local-mongoose");//Simplifies building username and password login with Passport
 
 var clientDetailsSchema = new MongoClient.Schema({
-    name:{
+    username:{
         type:String,
         required: [true, "Enter your two names"]
     },
