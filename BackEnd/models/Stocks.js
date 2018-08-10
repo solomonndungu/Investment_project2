@@ -21,12 +21,12 @@ passport.authenticate('local', { failureRedirect: '/login'}),
 //gets the companies stock data for the last 60 minutes
 async function TeslaRequest () {
     var Tesla = await stocks.timeSeries({
-            symbol: 'TSLA',//The symbol or abbreviations of the company stock you want to follow
-            interval: '60min',//interval of data points you want to retrieve. Per hour.
-            amount: 1,//Amount of data points to fetch. Returns an array with following keys and values: open, high, low, close, volume, date
-            time_period: 3,//Time period to calculate indicators or data. This will use 3 data points
-            indicator: 'ADX'//Where you want to fetch data. ADX quantifies trend strength. Moving average of price over period of time.
-        });
+        symbol: 'TSLA',//The symbol or abbreviations of the company stock you want to follow
+        interval: '60min',//interval of data points you want to retrieve. Per hour.
+        amount: 1,//Amount of data points to fetch. Returns an array with following keys and values: open, high, low, close, volume, date
+        time_period: 3,//Time period to calculate indicators or data. This will use 3 data points
+        indicator: 'ADX'//Where you want to fetch data. ADX quantifies trend strength. Moving average of price over period of time.
+    });
     }
     
 async function AppleRequest () {
