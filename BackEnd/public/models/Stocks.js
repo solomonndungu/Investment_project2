@@ -18,8 +18,11 @@ passport.authenticate('local', { failureRedirect: '/login'}),
     });
 
 
+    
+
+
 //gets the companies stock data for the last 60 minutes
-async function TeslaRequest () {
+/*async function TeslaRequest () {
     var Tesla = await stocks.timeSeries({
         symbol: 'TSLA',//The symbol or abbreviations of the company stock you want to follow
         interval: '60min',//interval of data points you want to retrieve. Per hour.
@@ -78,3 +81,4 @@ AppleRequest();
 MicrosoftRequest();
 DisneyRequest();
 BarclaysRequest();
+*/

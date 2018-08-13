@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel = "icon" type = "image.jpg" href = "../images/stocks3.jpg">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <link rel = "stylesheet" type = "text/css" href = "../public/css/Stocks.css">
@@ -9,11 +10,130 @@
         <script src = "../node_modules/stocks.js"></script>
         <script src = "../public/models/Stocks.js"></script>
     </head>
+    <!--<script type = "text/javascript">
+        function onLoad() {
+            var url = 'Stocks.json';
+            $.getJSON(url, function(json){
+                var table = $('<table>');
+                table.attr('border','1');
+                var tr = $('<tr>');
+                var td = $('<td>');
+                td.html("Name");
+                tr.append(td);
+                td = $('<td>');
+                td.html('Price');
+                tr.append(td);
+                table.append(tr);
+                for(var i=0; i<json.length;i++){
+                    var tr = $('<tr>');
+                        var td = $('<td>');
+                            td.html(json[i].Name);
+                            tr.append(td);
+                            td = $('<td>');
+                                td.html(json[i].Price);
+                                tr.append(td);
+                                table.append(tr);
+                }
+                $('body').append(table);
+
+
+
+            });
+        }
+        </script>-->
     <body>
         <nav class = "navbar navbar-light bg-transparent">
             <div class = "container-fluid">
-                <a href = "Portfolio"><button class = "btn btn-outline-success" type = "button" id = "Portfolio">Portfolio</button></a>
+                <a href = "Portfolio"><button class = "btn btn-outline-success" type = "button" id = "Portfolio">Click to go to Portfolio</button></a>
             </div>
         </nav>
+        
+
+        <br />
+        <p><h1>COMPANIES AND STOCKS</h1></p>
+        <table class = "table">
+            <thead class = "thead-dark">
+                <tr>
+                    <th><h5>Company Name</h5></th>
+                    <th><h5>Shares Price</h5></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>KenGen</td>
+                    <td>6.80</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <button id = "One">Buy</button>
+        <br />
+        <table class = "table">
+            <thead class = "thead-light">
+                <tr>
+                    <th><h5>Company Name</h5></th>
+                    <th><h5>Shares Price</h5></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>CIC Insurance Group</td>
+                    <td>4.70</td>
+                </tr>
+            </tbody>
+        </table>
+            <br />
+        <button id = "Two">Buy</button>
+        <br />
+        <table class = "table">
+                <thead class = "thead-dark">
+                <tr>
+                    <th><h5>Company Name</h5></th>
+                    <th><h5>Shares Price</h5></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Equity Group Holdings</td>
+                    <td>49.63</td>
+                </tr>
+            </tbody>
+            </table>
+            <br />
+        <button id = "Three">Buy</button>
+        <table class = "table">
+                <thead class = "thead-light">
+                <br />
+                <tr>
+                    <th><h5>Company Name</h5></th>
+                    <th><h5>Shares Price</h5></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Kenya Commercial Bank</td>
+                    <td>47.63</td>
+                </tr>
+            </tbody>
+            </table>
+            <br />
+        <button id = "Four">Buy</button>
+        <br />
+        <table class = "table">
+            <thead class = "thead-dark">
+                <tr>
+                    <th><h5>Company Name</h5></th>
+                    <th><h5>Shares Price</h5></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>KenolKobil Co</td>
+                    <td>17.75</td>
+                </tr>
+            </tbody>
+        </table>
+            <br />
+        <button id = "Five">Buy</button>
     </body>
 </html>

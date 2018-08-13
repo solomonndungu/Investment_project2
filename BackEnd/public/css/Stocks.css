@@ -27,3 +27,41 @@
     background-image: none;
     border-color: #28a745;
 }
+
+#One, #Two, #Three, #Four, #Five {
+    background-color: rgb(129, 66, 66);
+	color: white;
+	font: bolder;
+	padding: 15px 50px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 10%;
+	font-size: inherit;
+	opacity: 0.5;
+}
+
+#One:hover {
+    background-color: #4CAF50;
+        opacity: 1;
+    }
+
+#Two:hover {
+    background-color: #4CAF50;
+        opacity: 1;
+    }
+
+#Three:hover {
+    background-color: #4CAF50;
+        opacity: 1;
+    }
+
+#Four:hover {
+    background-color: #4CAF50;
+        opacity: 1;
+      }
+
+#Five:hover {
+background-color: #4CAF50;
+    opacity: 1;
+}

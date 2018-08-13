@@ -1,0 +1,26 @@
+[
+    {
+        "Name":"Equity Group Holdings",
+        "Price": 49.63
+    },
+    {
+        "Name":"Kenya Commercial Bank",
+        "Price": 47.63
+    },
+    {
+        "Name":"KenolKobil Co",
+        "Price": 17.75
+    },
+    {
+        "Name":"KenGen",
+        "Price": 6.80
+    },
+    {
+        "Name":"CIC Insurance Group",
+        "Price": 4.70
+    },
+    {
+        "Name":"Barclays Bank",
+        "Price": 11.53
+    }
+]
