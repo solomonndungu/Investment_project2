@@ -8,13 +8,19 @@ var cookieParser = require("cookie-parser");//enables parsing and populating of 
 var session = require("express-session");//creates a session for login
 var flash = require("connect-flash");//stores messages to display to user on next page or when redirecting
 
-var ClientDetails = require("./models/register");
+var ClientDetails = require("./public/models/register");
 
 var app = express();
 
+//load html files via server
 app.engine('html', cons.swig)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
+
+//all JS and CSS files in models folder
+app.use(express.static(path.join(__dirname, 'public')));
+//Also images folder
+app.use(express.static(path.join(__dirname, 'images')))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));//allows to choose between parsing the URL-encoded data for rich objects and arrays to be encoded for JSON
