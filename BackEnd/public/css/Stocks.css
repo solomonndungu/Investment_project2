@@ -1,4 +1,6 @@
-
+body {
+    text-align: center;
+}
 
 .btn {
     cursor: pointer;
@@ -64,4 +66,8 @@
 #Five:hover {
 background-color: #4CAF50;
     opacity: 1;
+}
+
+.container {
+    padding: 16px;
 }
