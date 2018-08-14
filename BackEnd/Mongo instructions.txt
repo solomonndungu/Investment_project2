@@ -1,3 +1,23 @@
 "c:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath="c:\data\db"
 
 "c:Program Files\MongoDB\Server\4.0\bin\mongo.exe"
+
+show dbs
+use back_end //create database
+db.Employee.insert
+	(
+		{
+			"Employeeid" : 1,
+			"EmployeeName" : "Martin"
+		}
+	)
+db.collection.insertOne()
+    db.collection.find()
+
+    db.collection.updateOne()
+    db.collection.deleteOne()
+    db.collection.deleteMany()
+
+    db.collection.finOneAndReplace()
+    db.collection.findOneAndDelete()
+    db.collection.findOneAndUpdate()
