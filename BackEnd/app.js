@@ -18,9 +18,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
 //all JS and CSS files in models folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname + '/public/css')));
+app.use(express.static(path.join(__dirname + '/public/models')))
 //Also images folder
-app.use(express.static(path.join(__dirname, 'images')))
+app.use(express.static(path.join(__dirname + 'images')))
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));//allows to choose between parsing the URL-encoded data for rich objects and arrays to be encoded for JSON

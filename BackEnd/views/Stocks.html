@@ -7,40 +7,8 @@
         <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <link rel = "stylesheet" type = "text/css" href = "../public/css/Stocks.css">
         <title>Stocks</title>
-        <script src = "../node_modules/stocks.js"></script>
         <script src = "../public/models/Stocks.js"></script>
     </head>
-    <!--<script type = "text/javascript">
-        function onLoad() {
-            var url = 'Stocks.json';
-            $.getJSON(url, function(json){
-                var table = $('<table>');
-                table.attr('border','1');
-                var tr = $('<tr>');
-                var td = $('<td>');
-                td.html("Name");
-                tr.append(td);
-                td = $('<td>');
-                td.html('Price');
-                tr.append(td);
-                table.append(tr);
-                for(var i=0; i<json.length;i++){
-                    var tr = $('<tr>');
-                        var td = $('<td>');
-                            td.html(json[i].Name);
-                            tr.append(td);
-                            td = $('<td>');
-                                td.html(json[i].Price);
-                                tr.append(td);
-                                table.append(tr);
-                }
-                $('body').append(table);
-
-
-
-            });
-        }
-        </script>-->
     <body>
         <nav class = "navbar navbar-light bg-transparent">
             <div class = "container-fluid">
@@ -67,7 +35,7 @@
                 </tbody>
             </table>
             <br />
-            <button id = "One">Buy</button>
+            <button id = "One" onclick = "PostShare()">Buy</button>
             <br />
             <table class = "table">
                 <thead class = "thead-light">

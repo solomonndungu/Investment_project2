@@ -18,6 +18,20 @@ passport.authenticate('local', { failureRedirect: '/login'}),
     });
 
 
+function PostShare(){
+    document.getElementById('One').innerHTML
+    app.get('/Stocks',
+    function(res, req, next) {
+        res.render('Portfolio');
+        next();
+    });
+
+    // app.post('/Portfolio',//Checks Portfolio URL
+    //     function(req, res) {
+    //         res.render('Portfolio');
+    //     });
+//}
+
     
 
 
